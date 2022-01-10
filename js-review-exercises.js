@@ -2,11 +2,24 @@
 
 // Write a function that takes in a number and returns triple the value of the passed number. Assume only number inputs.
 
+function triple(x){
+    if(isNaN(x)){
+        return "not a number";
+    } else{
+        return x * 3;
+    }
+}
+
+console.log(triple(4));
 // Modify the above function to work with numeric strings as well.
 
 // Modify the above function to return a string output of 'not a number' if the input is not a number or numeric string.
 
 // Write a function that takes in a number and string and returns the string 'matches length' if the passed number is the length of the passed string and returns 'no length match' otherwise.
+
+function matchesLength (num, string){
+
+}
 
 // (CHALLENGE) Write a function that takes in a day of the week as a string and returns the number that matches the day of the week. 'Sunday' should return 1 and 'Saturday' should return 7.
 
@@ -19,29 +32,29 @@
 
 // Write a function that takes in a string input and logs the first character, then the first two characts, etc., until the full string is logged.
 
-Example Input: 'Codeup'
-
-Example Output:
-
-    "C"
-"Co"
-"Cod"
-"Code"
-"Codeu"
-"Codeup"
+// Example Input: 'Codeup'
+//
+// Example Output:
+//
+//     "C"
+// "Co"
+// "Cod"
+// "Code"
+// "Codeu"
+// "Codeup"
 
 // (CHALLENGE) Write a function that takes in two string inputs and for each letter in the first string, logs how many times that given letter appears in the second string. It should be case insensitive. If a letter appears more than once in the first string, the output should simply log the same message as many times as it appears in the first string.
 
-Example Inputs: "Codeup", "Coding Challenges"
-
-Example Output:
-
-    'C' appears in 'Coding Challenges' 2 time(s)
-'o' appears in 'Coding Challenges' 1 time(s)
-'d' appears in 'Coding Challenges' 1 time(s)
-'e' appears in 'Coding Challenges' 2 time(s)
-'u' appears in 'Coding Challenges' 0 time(s)
-'p' appears in 'Coding Challenges' 0 time(s)
+// Example Inputs: "Codeup", "Coding Challenges"
+//
+// Example Output:
+//
+//     'C' appears in 'Coding Challenges' 2 time(s)
+// 'o' appears in 'Coding Challenges' 1 time(s)
+// 'd' appears in 'Coding Challenges' 1 time(s)
+// 'e' appears in 'Coding Challenges' 2 time(s)
+// 'u' appears in 'Coding Challenges' 0 time(s)
+// 'p' appears in 'Coding Challenges' 0 time(s)
 
 
 // ========== + Arrays
@@ -58,8 +71,8 @@ Example Output:
 
 // Write a function that takes in an array of strings and returns the first two words as a string concatenated together with a dash. Assume at least three string elements in the passed array.
 
-Example Input: ['cat', 'dog', 'fish']
-Example Output: 'cat-dog'
+// Example Input: ['cat', 'dog', 'fish']
+// Example Output: 'cat-dog'
 
 // (CHALLENGE) Write a function that takes in an array of strings and returns the array of strings sorted from shortest to longest string
 
